@@ -1,0 +1,26 @@
+- id: check
+  name: Roc Check
+  entry: roc check
+  language: system
+  files: .+\.roc$
+  description: Checks Roc code for problems.
+  pass_filenames: false
+- id: format
+  name: Roc Format
+  entry: roc format
+  language: system
+  files: .+\.roc$
+  description: Formats Roc code.
+  pass_filenames: false
+- id: glue
+  name: Roc Glue
+  entry: roc glue
+  language: system
+  description: Generate glue code between a platform's Roc API and its host language.
+  pass_filenames: false
+- id: test
+  name: Roc Test
+  entry: roc test
+  language: system
+  description: Runs all top-level expects in a main module and any modules it imports.
+  pass_filenames: false
