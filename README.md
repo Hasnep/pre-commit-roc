@@ -9,7 +9,7 @@ Assuming you've [installed the Pre-commit tool](https://pre-commit.com/#install)
 ```yaml
 # .pre-commit-config.yaml
 repos:
-  - repo: https://github.com/roc-community/pre-commit-hooks
+  - repo: https://github.com/hasnep/pre-commit-roc
     rev: main
     hooks:
       - id: check
@@ -25,7 +25,7 @@ For example, to run `roc glue` on a file called `a.roc` to generate `b.rs`, use
 ```yaml
 # .pre-commit-config.yaml
 repos:
-  - repo: https://github.com/roc-community/pre-commit-hooks
+  - repo: https://github.com/hasnep/pre-commit-roc
     rev: main
       - id: glue
         args: ["main.roc", "main.rs"]
