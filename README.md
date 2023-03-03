@@ -28,5 +28,5 @@ repos:
   - repo: https://github.com/hasnep/pre-commit-roc
     rev: main
       - id: glue
-        args: ["main.roc", "main.rs"]
+        args: ["a.roc", "b.rs"]
 ```
