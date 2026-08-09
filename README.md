@@ -16,11 +16,11 @@ repos:
       - id: check
         name: Check Roc code
         args: [src/main.roc]
-      - id: format
-        name: Roc Check
+      - id: fmt
+        name: Format Roc code
       - id: test
         name: Run Roc tests
         args: [src/main.roc]
 ```
 
-Then, whenever you make a commit, pre-commit will run `roc check`, `roc format` and `roc test` on your project.
+Then, whenever you make a commit, pre-commit will run `roc check`, `roc fmt` and `roc test` on your project.
