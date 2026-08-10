@@ -5,13 +5,13 @@
   files: .+\.roc$
   description: Checks Roc code for problems.
   pass_filenames: false
-- id: format
+- id: fmt
   name: Roc Format
-  entry: roc format
+  entry: roc fmt
   language: system
   files: .+\.roc$
   description: Formats Roc code.
-  pass_filenames: false
+  pass_filenames: true
 - id: glue
   name: Roc Glue
   entry: roc glue
